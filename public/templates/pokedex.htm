@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../public/static/pokedex/img/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="../../public/static/pokedex/pokedex.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!--<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>-->
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <title>Pokedex</title>
+</head>
+<body>
+    <header class="margin"><p></p></header>
+    <main>
+        <img src="" id="pokemon-img" style="display: none;" class="pokemon-image">
+
+        <a href="/login" class="login-button"><i class="fas fa-user-tie" style="color:black; font-size: 15px;"></i></a>
+
+        <h1 class="pokemon-data">
+            <span id="pokemon-number" class="pokemon-number"></span> - 
+            <span id="pokemon-name" class="pokemon-name">Carregando...</span>
+        </h1>
+
+        <form onsubmit="return false" class="form", id="form">
+            <input class="input-search" id="input-search" type="number" placeholder="Digite o número do Pokémon" required>
+        </form>
+
+        <div class="buttons-left">
+            <button id="btn-prev" value="prev" class="button btn-prev">Prev</button>
+            <button id="btn-next" value="next" class="button btn-prev">Next</button>
+        </div>
+
+        <div class="pokemon-screen2-box" id="info">
+            <h1 class="screen2-tittle bilugado">Info</h1>
+            <h1 class="pokemon-height">Height: {{height}}</h1>
+            <h1 class="pokemon-weight">Weight: {{weight}}</h1>
+        </div>
+        <div class="pokemon-screen2-box hide" id="type">
+            <h1 class="screen2-tittle">Type</h1>
+            <div class="align">
+                    <h1 class="pokemon-type1">{{type1}} </h1>
+                    <h1 class="pokemon-type2"> {{type2}}</h1>
+            </div>
+        </div>
+        <div class="pokemon-screen2-box hide" id="abilities">
+            <h1 class="screen2-tittle">Abilities</h1>
+            <h1 class="pokemon-height">{{ability1}}</h1>
+            <h1 class="pokemon-weight">{{ability2}}</h1>
+        </div>
+        <div class="pokemon-screen2-box hide" id="moves">
+            <h1 class="screen2-tittle">Moves</h1>
+            <div class="align">
+                    <h1 class="pokemon-move1">{{move1}}</h1> 
+                    <h1 class="pokemon-move2">{{move2}}</h1>
+            </div>
+            <div>
+                <h1 class="pokemon-move3">{{move3}}</h1>
+                <h1 class="pokemon-move4">{{move4}}</h1>
+            </div>
+        </div>
+
+        <div class="buttons-right-1">
+            <button class="button btn-prev" onclick="infoShow()">Info</button>
+            <button class="button btn-prev" onclick="typeShow()">Type</button>
+        </div>
+
+        <div class="buttons-right-2">
+            <button class="button btn-prev" onclick="abilitiesShow()">Abilities</button>
+            <button class="button btn-prev" onclick="movesShow()">Moves</button>
+        </div>
+
+        <img src="../../public/static/pokedex/img/pokedex.png" alt="pokedex", class="pokedex">
+
+    </main>
+    
+    <py-script src="../../public/static/pokedex/front.py" ></py-script>
+    <script>
+        const form = document.getElementById('form')
+        const python = pyodideGlobals.get('previous_pokemon')
+        form.addEventListener('submit', python)
+    </script>
+</body>
+</html>

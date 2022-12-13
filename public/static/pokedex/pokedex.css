@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+
+body {
+    text-align: center;
+    background-image: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh;
+}
+
+main {
+    display: inline-block;
+    margin-top: 11%;
+    padding: 15px;
+    position: relative;
+}
+
+.login-button {
+    position: absolute;
+    left: 6.5%;
+    bottom: 83%;
+	box-shadow: -2px 1px #ffffff, -3px 2px 0 rgb(0, 0, 0);
+	background-color:#3cedfa;
+	border-radius:28px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 23px;
+	text-decoration:none;
+}
+.login-button:active {
+    box-shadow: inset -1px 1px 0 #222;
+}
+
+.hide {
+    display: none;
+}
+
+.pokedex {
+    width: 100%;
+    max-width: 625px;
+}
+
+.pokemon-image {
+    position: absolute;
+    bottom: 46%;
+    left: 20%;
+    height: 15%;
+}
+
+.pokemon-data {
+    position: absolute;
+    font-weight: 600;
+    font-size: clamp(8px, 4vw, 16px);
+    color: #fff;
+    bottom: 35%;
+    left: 9%;
+    width: 35%;
+    text-align: end;
+}
+
+.pokemon-name {
+    color: rgb(63, 63, 63);
+    text-transform: capitalize;
+}
+
+.align {
+    width: 100%;
+    height: 22%;
+}
+
+.pokemon-screen2-box {
+    position: absolute;
+    bottom: 50%;
+    left: 60%;
+    width: 30%;
+    height: 19%;
+}
+
+.screen2-tittle {
+    text-align: center;
+    left: 35%;
+    bottom: 100%;
+    width: 100%;
+    text-decoration: underline;
+    font-size: clamp(8px, 4vw, 23px);
+}
+
+.pokemon-height {
+    margin-top: 10px;
+    text-align: left;
+    font-size: clamp(6px, 2.5vw, 16px);
+}
+
+.pokemon-weight {
+    margin-top: 5px;
+    text-align: left;
+    font-size: clamp(6px, 2.5vw, 16px);
+}
+
+.pokemon-type1 {
+    margin-left: 5px;
+    position: absolute;
+    bottom: 30%;
+    text-align: left;
+    font-size: clamp(6px, 2.5vw, 16px);
+    text-transform: capitalize;
+}
+
+.pokemon-type2 {
+    position: absolute;
+    bottom: 30%;
+    right: 2%;
+    text-align: right;
+    font-size: clamp(6px, 2.5vw, 16px);
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.pokemon-move1 {
+    position: absolute;
+    bottom: 44%;
+    text-align: left;
+    font-size: clamp(4px, 2.5vw, 12px);
+    text-transform: capitalize;
+}
+.pokemon-move2 {
+    position: absolute;
+    bottom: 44%;
+    text-align: right;
+    font-size: clamp(4px, 2.5vw, 12px);
+    text-transform: capitalize;
+    width: 100%;
+}
+.pokemon-move3 {
+    position: absolute;
+    bottom: 10%;
+    text-align: left;
+    font-size: clamp(4px, 2.5vw, 12px);
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.pokemon-move4 {
+    position: absolute;
+    bottom: 10%;
+    text-align: right;
+    font-size: clamp(4px, 2.5vw, 12px);
+    text-transform: capitalize;
+    width: 100%;
+}
+
+
+
+.pokemon-moves {
+    margin-top: 10px;
+    font-size: clamp(6px, 2.5vw, 16px);
+}
+
+.form {
+    position: absolute;
+    width: 36%;
+    bottom: 21%;
+    left: 8%;
+}
+
+.input-search {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    box-shadow: -1px 2px 0 rgb(99, 99, 99), -2px 3px 0 rgb(27, 27, 27);
+}
+
+.buttons-left {
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+    width: 35%;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons-right-1 {
+    position: absolute;
+    bottom: 33%;
+    left: 60%;
+    width: 30%;
+    height: 10%;
+    display: flex;
+    gap: 30px;
+}
+
+.buttons-right-2 {
+    position: absolute;
+    bottom: 18%;
+    left: 60%;
+    width: 30%;
+    height: 10%;
+    display: flex;
+    gap: 30px;
+}
+
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -1px 2px 0 rgb(34, 34, 34), -2px 3px 0 rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.button:active {
+    box-shadow: inset -1px 1px 0 #222;
+}

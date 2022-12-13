@@ -1,0 +1,77 @@
+body {
+    background-image: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh;
+}
+
+h1 {
+    color: #fff;
+    font-weight: 600;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+}
+
+.white {
+    color: #fff;
+    position: absolute;
+    left: 70%;
+}
+
+.align {
+    background-color: #6ab7f5;
+}
+
+.panel-body{
+    background-color: rgb(53, 53, 53);
+    border-color: rgb(53, 53, 53);
+    color: #fff;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.panel.with-nav-tabs .panel-heading {
+    padding: 5px 5px 0 5px;
+    background-color: #252525;
+    border-color: rgb(53, 53, 53);
+}
+
+.panel.with-nav-tabs .nav-tabs {
+    border-bottom: none;
+    border-color: rgb(53, 53, 53);
+}
+
+.panel.with-nav-tabs .nav-justified {
+    margin-bottom: -1px;
+    border-color: rgb(53, 53, 53);
+}
+
+.with-nav-tabs.panel-default .nav-tabs>li>a,
+.with-nav-tabs.panel-default .nav-tabs>li>a:hover,
+.with-nav-tabs.panel-default .nav-tabs>li>a:focus {
+    color: rgb(255, 255, 255);
+    border-color: rgb(53, 53, 53);
+}
+
+.with-nav-tabs.panel-default .nav-tabs>.open>a,
+.with-nav-tabs.panel-default .nav-tabs>.open>a:hover,
+.with-nav-tabs.panel-default .nav-tabs>.open>a:focus,
+.with-nav-tabs.panel-default .nav-tabs>li>a:hover,
+.with-nav-tabs.panel-default .nav-tabs>li>a:focus {
+    color: rgb(255, 255, 255);
+    background-color: rgb(53, 53, 53);
+    border-color: rgb(53, 53, 53);
+}
+
+.with-nav-tabs.panel-default .nav-tabs>li.active>a,
+.with-nav-tabs.panel-default .nav-tabs>li.active>a:hover,
+.with-nav-tabs.panel-default .nav-tabs>li.active>a:focus {
+    color: rgb(255, 255, 255);
+    background-color: rgb(53, 53, 53);
+    border-color: rgb(53, 53, 53);
+    border-bottom-color: rgb(53, 53, 53);
+}
+
